@@ -6,11 +6,13 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
-* {
-  box-sizing: border-box;
+
+@font-face {
+  font-family: "poppinsMedium";
+  src: url("../public/fonts/Poppins-Medium.ttf");
+} 
+
+.navbar-toggler-icon {
+  background-image: url("../public/open-menu\ 1.svg")  !important
 }
