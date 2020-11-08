@@ -2,7 +2,6 @@ import React,{useEffect,useState} from 'react'
 import { Navbar,Nav,NavDropdown,Form,FormControl } from 'react-bootstrap'
 import FLexLayout from '../FlexLayout'
 import Button from '../Button'
-import { isBrowser } from '../../utilities'
 
 
 export default function _HeaderComponent(){
@@ -25,7 +24,7 @@ export default function _HeaderComponent(){
   },[])
 
   return(
-    <Navbar style={{backgroundColor:'black'}}  expand={ windowWidth > 692  }    >
+    <Navbar fixed='top' style={{backgroundColor:'black'}}  expand={ windowWidth > 692  }    >
     <Navbar.Brand href="#home">
     <img
         src="/logoLarge.svg"

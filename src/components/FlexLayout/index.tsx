@@ -1,7 +1,7 @@
 import React from "react";
 
 interface Props {
-  style?: any;
+  style?: React.CSSProperties;
   justifyContent?: string;
   rowORColumn: string;
   alignItem?: string;
@@ -9,7 +9,7 @@ interface Props {
   children:JSX.Element |JSX.Element[]
 }
 
-function FLexLayout(props: Props) {
+export default function FLexLayout(props: Props) {
   const { style, justifyContent, rowORColumn, alignItem, onClick } = props;
   return (
     <div
@@ -22,4 +22,3 @@ function FLexLayout(props: Props) {
   );
 }
 
-export default FLexLayout;

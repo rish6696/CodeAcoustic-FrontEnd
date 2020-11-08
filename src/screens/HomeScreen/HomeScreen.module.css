@@ -1,0 +1,27 @@
+.advertisementText{
+    font-family:poppinsExtraBold;
+    color:white;
+    text-align:center;
+    font-size: 80px;
+}
+
+
+/* 
+@media only screen and (max-width: 715px) {
+    .advertisementText{
+        font-size: 30px;
+    }
+ } */
+
+ @media only screen and (max-width: 490px) {
+    .advertisementText{
+        font-size: 70px;
+    }
+ }
+
+
+/* @media only screen and (min-width: 715px) {
+    .advertisementText{
+        font-size: 80px;
+    }
+ } */

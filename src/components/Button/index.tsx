@@ -8,7 +8,7 @@ interface Props{
 }
 export default function _Button({ text,style }:Props){
     return(
-        <button className={styles.Button}  >
+        <button className={styles.Button} style={style}  >
           {text}
         </button>
     )
