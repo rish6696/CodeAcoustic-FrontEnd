@@ -13,7 +13,7 @@ export function _HomeScreen() {
     <>
       <BackGroundImage />
       <Navbar></Navbar>
-      <FLexLayout alignItem='center' rowORColumn='column'>
+      <FLexLayout alignItem="center" rowORColumn="column">
         <div className={styles.advertisementText}>
           Code it; <br />{" "}
           <span style={{ color: "#A16AE8" }}>
@@ -29,7 +29,7 @@ export function _HomeScreen() {
             height: "50px",
             borderRadius: "30px",
           }}
-          text='Get Started'
+          text="Get Started"
         />
       </FLexLayout>
       <WhyUs />

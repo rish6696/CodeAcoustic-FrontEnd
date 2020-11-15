@@ -1,19 +1,21 @@
-import React from 'react'
-import FLexLayout from '../FlexLayout'
-import { Image}  from 'react-bootstrap'
+import React from "react";
+import FLexLayout from "../FlexLayout";
+import { Col, Container, Image, Row } from "react-bootstrap";
+import CloudComponent from '../clouds/index'
 
+export default function _WhyUSComponent() {
 
-export default function _WhyUSComponent(){
-
-    return(
-        <FLexLayout rowORColumn='row' style={{width:'100%',marginTop:'40px'}} >
-            <Image height='600px' src='/whyUs.svg'   />
-            <div style={{height:'600px',backgroundColor:'#A16AE8',width:'100%'}} >
-                 <div  style={{backgroundColor:'red', width:'150px',height:'10git 0px',borderRadius:'50%'  }}  >
-
-                 </div>
-            </div>
-        </FLexLayout>
-    )
-
+    const image ='http://localhost:3000/whyus.svg'
+  return (
+    <Container fluid >
+      <Row noGutters={true} style={{marginTop:'20px'}} >
+          <Col xs={12} md={6}  >
+             <Image src='/whyUs.svg'></Image>
+          </Col>  
+          <Col xs={12} md={6} style={{backgroundColor:'#A16AE8',  }}  >
+             <CloudComponent isLeft={true} ></CloudComponent>
+          </Col> 
+      </Row>
+    </Container>
+  );
 }
