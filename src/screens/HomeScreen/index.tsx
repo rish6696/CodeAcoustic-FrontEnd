@@ -4,10 +4,13 @@ import BackGroundImage from "../../components/BackgroundImage";
 import FLexLayout from "../../components/FlexLayout";
 import Button from "../../components/Button/index";
 import styles from "./HomeScreen.module.css";
-import WhyUs from "../../components/WhyUsSection";
+import WhyUs from '../../components/WhyUsSection/index'
+import AboutUs from '../../components/AboutUs/index'
+
 const Navbar = Dynamic(() => import("../../components/Navbar/index"), {
   ssr: false,
 });
+
 export function _HomeScreen() {
   return (
     <>
@@ -33,6 +36,7 @@ export function _HomeScreen() {
         />
       </FLexLayout>
       <WhyUs />
+      <AboutUs/>
     </>
   );
 }

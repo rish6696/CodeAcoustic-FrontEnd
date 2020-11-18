@@ -1,32 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Card, Col, Container, Image, Row } from "react-bootstrap";
 
 interface Props {
   style?: React.CSSProperties;
-  isLeft: boolean;
+  chat :string
 }
 
-export default function _CloudComponent({ isLeft }: Props) {
-  const baseUrl = "http://localhost:3000/";
-  const imgPath = isLeft
-    ? baseUrl + "cloudLeft.svg"
-    : baseUrl + "cloudRight.svg";
-
+export default function _CloudComponent({ style,chat }: Props) {
+ 
   return (
-    <div style={{marginTop:'20px',position:'absolute'}} >
-      <img src={imgPath} style={{ width: "200px" }}></img>
-      <div
-        style={{
-          position: "absolute",
-          top: "30px",
-          color: "wheat",
-          fontSize: "10pt",
-          left: "50px",
-        }}
-      >
-        I did that code! <br></br>
-        But How I did It ?
-      </div>
+    <div
+      style={{
+        backgroundColor: "#341948",
+        borderRadius: "50%",
+        color: "wheat",
+        textAlign: "center",
+        paddingTop: "20px",
+        marginTop:'25px',
+        whiteSpace:'pre-line',
+        marginLeft:'5px',
+        marginRight:'5px',
+        ...style
+      }}
+    >
+      {chat}
     </div>
   );
 }

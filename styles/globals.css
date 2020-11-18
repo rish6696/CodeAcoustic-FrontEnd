@@ -13,6 +13,12 @@ body {
   src: url("../public/fonts/Poppins-Medium.ttf");
 } 
 
+
+@font-face {
+  font-family: "poppinsBlack";
+  src: url("../public/fonts/Poppins-Black.ttf");
+} 
+
 @font-face {
   font-family: "poppinsExtraBold";
   src: url("../public/fonts/Poppins-ExtraBold.ttf");
